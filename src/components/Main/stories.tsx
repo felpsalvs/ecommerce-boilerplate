@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react'
-import {{pascalCase name}} from '.'
+import Main from '.'
 
 export default {
-  title: '{{pascalCase name}}',
-  component: {{pascalCase name}}
+  title: 'Main',
+  component: Main
 } as Meta
 
 export const Default: StoryObj = {}
