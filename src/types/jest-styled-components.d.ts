@@ -1,9 +1,30 @@
-import theme from 'styles/theme'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+// Types provided from the official repo:
+// https://github.com/styled-components/jest-styled-components/blob/master/typings/index.d.ts
 
-// inferência de tipos
-type Theme = typeof theme
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/ban-types */
+import { Plugin, NewPlugin } from 'pretty-format'
 
-declare module 'styled-components' {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  export interface DefaultTheme extends Theme {}
+declare global {
+  namespace jest {
+    interface AsymmetricMatcher {
+      $$typeof: symbol
+      sample?: string | RegExp | object | Array<any> | Function
+    }
+
+    type Value = string | number | RegExp | AsymmetricMatcher | undefined
+
+    interface Options {
+      media?: string
+      modifier?: string
+      supports?: string
+    }
+
+    interface Matchers<R, T> {
+      toHaveStyleRule(property: string, value?: Value, options?: Options): R
+    }
+  }
 }
+
+export declare const styleSheetSerializer: Exclude<Plugin, NewPlugin>
