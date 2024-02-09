@@ -29,4 +29,7 @@ describe('<GameCard />', () => {
 
     expect(screen.getByLabelText(/add to wishlist/i)).toBeInTheDocument()
   })
+
+  it('should render price in label', () => {})
+  it('should render a line-through in price when promotional', () => {})
 })
