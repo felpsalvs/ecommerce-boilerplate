@@ -26,6 +26,7 @@
     "polished": "^4.2.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-slick": "^0.30.2",
     "styled-components": "^6.1.1",
     "styled-icons": "^10.47.0",
     "styled-media-query": "^2.1.2"
@@ -45,6 +46,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
     "babel-jest": "^29.7.0",
@@ -58,7 +60,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-styled-components": "^7.2.0",
     "lint-staged": "^15.2.0",
-    "plop": "^4.0.0",
+    "plop": "^4.0.1",
     "prettier": "3.1.0",
     "storybook": "^7.6.7",
     "typescript": "^5"
