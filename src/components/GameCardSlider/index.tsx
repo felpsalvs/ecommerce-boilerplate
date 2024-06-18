@@ -2,7 +2,7 @@ import * as S from './styles'
 
 const GameCardSlider = () => (
   <S.Wrapper>
-    <h1>GameCardSlider</h1>
+    <h1>Component GameCardSlider</h1>
   </S.Wrapper>
 )
 
